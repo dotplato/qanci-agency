@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Code, ArrowUpRight, Users, Sparkles, HelpCircle } from "lucide-react";
+import { ArrowUpRight, Users, Sparkles } from "lucide-react";
 import { HERO_TAGS } from "../data";
 
 interface HeroProps {
@@ -36,26 +36,16 @@ export default function Hero({ onTagClick, selectedTag, onScrollToSection }: Her
             </span>
           </motion.div>
 
-          <h1 className="font-display font-bold text-5xl sm:text-7xl lg:text-8xl text-brand-dark leading-[0.9] tracking-tight mb-2">
-            Development
+          <h1 className="font-display font-bold text-5xl sm:text-7xl lg:text-8xl text-brand-dark leading-[0.9] tracking-tight">
+            DesignCompany
+            {/* Retro checker pattern logo box */}
+            <span className="inline-grid grid-cols-2 gap-0.5 w-6 h-6 sm:w-10 sm:h-10 ml-2 sm:ml-3 align-middle">
+              <span className="bg-brand-orange rounded-xs"></span>
+              <span className="bg-brand-dark/10 rounded-xs"></span>
+              <span className="bg-brand-dark/10 rounded-xs"></span>
+              <span className="bg-brand-dark rounded-xs"></span>
+            </span>
           </h1>
-          
-          <div className="flex flex-wrap items-center justify-center gap-x-2 sm:gap-x-4 font-display font-medium text-4xl sm:text-7xl lg:text-8xl tracking-tight text-brand-dark">
-            <span className="inline-flex items-center gap-2 bg-[#E1E8E5] text-[#0B251E] px-4 sm:px-6 py-1 sm:py-2 rounded-2xl sm:rounded-3xl shadow-inner border border-brand-dark/5 my-1 transform hover:rotate-2 transition-transform select-none">
-              <Code className="w-8 h-8 sm:w-12 sm:h-12 md:w-14 md:h-14 text-brand-orange" />
-              <span className="text-3xl sm:text-6xl md:text-7xl font-mono leading-none font-bold">/</span>
-            </span>
-            <span className="font-extrabold tracking-tight relative pr-1">
-              Agency
-              {/* Retro checker pattern logo box */}
-              <span className="inline-grid grid-cols-2 gap-0.5 w-6 h-6 sm:w-10 sm:h-10 ml-2 align-middle">
-                <span className="bg-brand-orange rounded-xs"></span>
-                <span className="bg-brand-dark/10 rounded-xs"></span>
-                <span className="bg-brand-dark/10 rounded-xs"></span>
-                <span className="bg-brand-dark rounded-xs"></span>
-              </span>
-            </span>
-          </div>
         </div>
 
         {/* HERO IMAGE BANNER CONTAINER */}
@@ -66,8 +56,8 @@ export default function Hero({ onTagClick, selectedTag, onScrollToSection }: Her
           className="relative rounded-[2.5rem] overflow-hidden bg-brand-dark/10 shadow-2xl group border-[6px] border-white/80 my-8 sm:my-10"
         >
           <img 
-            src="/src/assets/images/hero_manager_1779219626956.png" 
-            alt="Qanci Creative Studio Tech Professional in Orange Lead chair"
+            src="/src/assets/images/creative_dev_1779219646269.png" 
+            alt="DesignCompany creative developer at work in a modern studio"
             className="w-full h-[320px] sm:h-[480px] lg:h-[580px] object-cover object-center group-hover:scale-[1.01] transition-transform duration-700 ease-out"
             referrerPolicy="no-referrer"
           />
