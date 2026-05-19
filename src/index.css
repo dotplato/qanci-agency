@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom palette matching the design */
+  --color-brand-dark: #070B0A;      /* Deep blackish-teal for cards, bodies, contrast bases */
+  --color-brand-green-deep: #0B251E;/* Dark green for background accents */
+  --color-brand-green-light: #EBF1EF;/* Soft sage greenish white-grey */
+  --color-brand-orange: #FF5A25;    /* Deep vivid orange accent / buttons */
+  
+  --animate-float: float 6s ease-in-out infinite;
+}
+
+@layer base {
+  body {
+    @apply font-sans antialiased text-brand-dark bg-[#F9FBFA];
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Custom hide map scrollbars */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+

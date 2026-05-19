@@ -1,0 +1,6 @@
+{
+  "name": "Qanci Development Agency",
+  "description": "A high-fidelity premium design and development agency website with interactive works, client reviews, achievements, and an estimating system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
